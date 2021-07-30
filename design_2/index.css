@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+ 
+}
+
+.container{
+    display: flex;
+}
+
+
+.cards{
+    margin: 3%;
+    width: 50%;
+    background-color: white;
+    height: auto;
+    border: solid .2em #313131;
+}
+
+.cards-info{
+    padding: 1em;
+}
+
+h1{
+    font-size: 1.5em;
+    color: #464646;
+}
+
+.cards-info > p{
+    text-align: justify;
+    color: #3131319e;
+    margin-top: 1em;
+    line-height: 170%;
+}
+
+.btn{
+    background-color: #313131;
+    width: 100%;
+    padding: 1em;
+    text-align: left;
+    font-size: 1.2em;
+    color: white;
+    font-weight: normal;
+    border: none;
+    outline: none;
+}
+
+.cards:hover{
+    border: solid .2em royalblue;
+    cursor: pointer;
+}
+
+.cards:hover > .btn-container > .btn{
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+}
