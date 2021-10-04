@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>practice</title>
+</head>
+<body>
+
+    <div class="container">
+
+            <div class="box-1">
+
+                <img src="../design_3/img/default.jpeg" alt="" class="main-image">
+
+            </div>
+
+            <div class="box-2">
+
+                <div class="childof-box-2" onclick="iphonechangeonClick(this)">
+                    <img src="../design_3/img/pic-1.png" alt="">
+                </div>
+
+                <div class="childof-box-2" onclick="iphonechangeonClick(this)">
+                    <img src="../design_3/img/pic-2.png" alt="">
+                </div>
+
+                <div class="childof-box-2" onclick="iphonechangeonClick(this)">
+                    <img src="../design_3/img/pic-3.png" alt="">
+                </div>
+
+            </div>
+
+    </div>
+
+
+    <script>
+
+        const iphoneList = document.querySelector('.box-2').children;
+
+        function iphonechangeonClick(event){
+            document.querySelector('.main-image').src=event.children[0].src;
+
+            for(let i = 0; i< iphoneList.length; i++){
+                iphoneList[i].classList.remove('active');
+            }
+            event.classList.add('active');
+
+        }
+
+    </script>
+    
+</body>
+</html>
